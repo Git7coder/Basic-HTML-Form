@@ -1,0 +1,155 @@
+.navbar{
+	background-color: #FFFFFF !important;
+}
+
+.outer_content{
+	margin-top: 100px;
+	background-color: #F6F6F6 !important;
+}	
+
+.heading1{
+	font-size: 30px;
+	text-decoration: none;
+	color: #1F497D;
+}
+
+.form1{
+	margin-top: 10px;
+	margin-bottom: 100px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 50px;
+}
+
+.sel1{
+	margin-top: 10px;
+	font-size: 20px !important;
+}
+
+.faint{
+	color: #999999;
+	margin-top: -10px;
+}
+
+.btn01{
+	margin-top: 20px;
+	font-size: 20px;
+	background-color: #1F497D;
+	border: 0px;
+	border-radius: 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+
+.jumbotron{
+	text-align: center !important;
+}
+.display-4{
+	color: #1F497D;
+	font-size: 35px;
+}
+.route1{
+	text-align: left !important;
+	color: #1F497D;
+	font-size: 15px;
+}
+.route2{
+	text-align: left !important;
+	color: #1F497D;
+	font-size: 20px;
+}
+.route3{
+	text-align: left !important;
+	color: #1F497D;
+	font-size: 15px;
+}
+.route4{
+	text-align: left !important;
+	color: #869F00;
+	font-size: 15px;
+}
+.footer_btn{
+	border: 1px #999999 solid;
+	border-radius: 20px;
+}
+
+
+
+.card-header{
+	color: #1F497D;
+	font-size: 20px;
+}
+.card-body{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #999999;
+}
+.card-text{
+	color: #999999;
+	margin-top: -10px;
+}
+.btn02{
+	margin-top: 20px;
+	font-size: 20px;
+	color: black;
+	background-color: #CCCCCC;
+	border: 0px;
+	border-radius: 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.set1{
+	margin-top: 60px;
+}
+.btn03{
+	margin-top: 20px;
+	font-size: 20px;
+	/*background-color: #1F497D;*/
+	border: 0px;
+	border-radius: 60px;
+	padding-left: 60px;
+	padding-right: 40px;
+}
+.sel2{
+	margin-top: 10px;
+	font-size: 30px !important;
+	color: #1F497D;
+}
+
+
+
+/*FOOTER*/
+.foot_main{
+	background-color: #1F497D;
+	margin-top: -30px;
+	padding: 10px;
+	color: #FFFFFF;
+}
+.ft{
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.ft2{
+	margin-bottom: 30px;
+}
+.foot_he{
+	font-size: 18px;
+	color: white;
+	text-decoration: none !important;
+}
+	.foot_he:hover{
+		color: #ffffff;
+		text-decoration: none !important;
+	}
+.foot_re{
+	font-size: 15px;
+	color: white;
+	text-decoration: none !important;
+}
+	.foot_re:hover{
+		color: #ffffff;
+		text-decoration: none !important;
+	}

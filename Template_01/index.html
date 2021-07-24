@@ -2,9 +2,347 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>CoWin App</title>
+	<title>Medico</title>
+	
+	<!-- =================================== -->
+	<!-- Bootstrap -->
+	<!-- =================================== -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- =================================== -->
+	<!-- Google Fonts -->
+	<!-- =================================== -->
+
+	<!-- =================================== -->
+	<!-- Stylesheet -->
+	<!-- =================================== -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 <body>
+
+<!-- Navigation Bar -->
+<nav class="navbar fixed-top navbar-light bg-light">
+	<div class="container">
+  		<a class="navbar-brand" href="#">
+    		<img src="images/cowinlogo.png" width="200" height="" alt="">
+  		</a>
+
+  		<ul class="nav justify-content-end">
+  			<li class="nav-item">
+    			<a class="nav-link active" href="#">Logout</a>
+  			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="outer_content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1">
+				<!-- <span class="heading1"><b>Register for Vaccination</b></span> -->
+			</div>
+			<div class="col-sm-10">
+				<br>
+				<span class="heading1"><b>Register for Vaccination</b></span>
+
+				<div class="container form1">
+					<div class="row">
+						<div class="col-sm-12">
+							Your Photo ID will be verified at the timeof your vaccination appointment. Please provide the details of the Photo Id you will carry for vaccination.
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+							  	<label class="sel1" for="sel1">Photo ID Proof</label>
+							  	<select class="form-control" id="sel1">
+							    	<option>Aadhaar Card</option>
+							    	<option>PAN Card</option>
+							    	<option>Driving License</option>
+							    	<option>Passport</option>
+							  	</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+							  	<label class="sel1" for="usr">Photo ID Number</label>
+							  	<input type="text" class="form-control" id="usr">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="sel1" for="usr">Gender</label><br>
+							<div class="form-check-inline">
+  								<label class="form-check-label">
+    								<input type="radio" class="form-check-input" name="optradio">Male
+  								</label>
+							</div>
+							<div class="form-check-inline">
+  								<label class="form-check-label">
+    								<input type="radio" class="form-check-input" name="optradio">Female
+  								</label>
+							</div>
+							<div class="form-check-inline disabled">
+  								<label class="form-check-label">
+    								<input type="radio" class="form-check-input" name="optradio" disabled>Others
+  								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+							  	<label class="sel1" for="usr">Birth Year</label>
+							  	<input type="text" class="form-control" id="usr">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="sel1" for="usr">Do you have any comorbidities (Pre-existing medical conditions)?</label><br>
+							<p class="faint">If you have any comorbidities, please carry a medical certificate with you for the vaccination appointment</p>
+							<div class="form-check-inline">
+  								<label class="form-check-label">
+    								<input type="radio" class="form-check-input" name="optradio">Yes
+  								</label>
+							</div>
+							<div class="form-check-inline">
+  								<label class="form-check-label">
+    								<input type="radio" class="form-check-input" name="optradio">No
+  								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="button" class="btn btn-primary float-right btn01">Register</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							* All fields are mandatory 
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-sm-1">
+				<!-- <span class="heading1"><b>Register for Vaccination</b></span> -->
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-1">
+				<!-- <span class="heading1"><b>Register for Vaccination</b></span> -->
+			</div>
+			<div class="col-sm-10">
+				<br>
+				<span class="heading1"><b>Book Appointment for Vaccination</b></span>
+
+				<div class="container form1">
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="sel2" for="usr">Search Vaccination Center</label><br>
+							<form>
+							  	<div class="form-row">
+							    	<div class="col">
+							    		<label class="" for="usr">State / UT</label>
+							      		<select class="form-control" id="sel1">
+									    	<option>Maharashtra</option>
+									    	<option>Dehli</option>
+									    	<option>Punjab</option>
+									    	<option>Gujrat</option>
+									  	</select>
+							    	</div>
+							    	<div class="col">
+							    		<label class="" for="usr">District</label>
+							      		<select class="form-control" id="sel1">
+									    	<option>Thane</option>
+									    	<option>Mumbai</option>
+									    	<option>South Mumbai</option>
+									    	<option>East Mumbai</option>
+									  	</select>
+							    	</div>
+							    	<div class="col">
+							    		<label class="" for="usr">City</label>
+							      		<select class="form-control" id="sel1">
+									    	<option>Kalyan</option>
+									    	<option>Diva</option>
+									    	<option>Karjat</option>
+									    	<option>Kaalva</option>
+									  	</select>
+							    	</div>
+							    	<div class="col">
+							    		<label class="" for="usr">Pincode</label>
+							      		<select class="form-control" id="sel1">
+									    	<option>421125</option>
+									    	<option>421126</option>
+									    	<option>421127</option>
+									    	<option>421128</option>
+									  	</select>
+							    	</div>
+							  	</div>
+							  	<div class="row">
+									<div class="col-sm-12 text-center">
+										<button type="button" class="btn btn-primary btn02">Search</button>
+									</div>
+								</div>
+								<div class="form-row set1">
+							    	<div class="col">
+							      		<div class="card bg-light mb-3" style="max-width: 20rem;">
+										  	<div class="card-header"><b>Center Name</b></div>
+										  	<div class="card-body">
+										    	<h5 class="card-title">NOBLE HOSPITAL</h5>
+										    	<p class="card-text">Address: Ursekarwadi, Station Rd, near Pooja Madhuban Theater, Dombivli East, Dombivli, 421201</p>
+										  	</div>
+										  	<div class="card-body">
+										    	<h5 class="card-title">Tilaknagar Vidya Mandir School</h5>
+										    	<p class="card-text">Address: Tilak School Rd, Tilak Nagar, Dombivli East, Dombivli, Maharashtra 421201</p>
+										  	</div>
+										  	<div class="card-body">
+										    	<h5 class="card-title">Optilife Multispeciality Hospital</h5>
+										    	<p class="card-text">Address: Phonix Sudama(Arcade) Building, Near Shivaji Udyog Nagar, Manpada Road, G.B, Patharli Rd, Dombivli, E)- 421201</p>
+										  	</div>
+										</div>
+							    	</div>
+							    	<div class="col">
+							      		<div class="card bg-light mb-3" style="max-width: ;">
+										  	<div class="card-header"><b>Avaliability</b> (Mar 2, 2021 - Mar 11 2021)</div>
+										  	<div class="card-body">
+										    	<h5 class="card-title">No appointment are available in this period</h5>
+										    	<!-- <p class="card-text">Address: Ursekarwadi, Station Rd, near Pooja Madhuban Theater, Dombivli East, Dombivli, 421201</p> -->
+										  	</div>
+										  	
+										</div>
+										<div class="text-right">
+										<a class="text-right" href="#">Next Week ></a>
+										</div>
+										<div class="text-right">
+											<button type="button" class="btn btn-link btn03">Back</button>
+											<button type="button" class="btn btn-primary btn01">Book</button>
+										</div>
+										
+							    	</div>
+							    </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="footer_head">
+	<div class="jumbotron jumbotron-fluid">
+	  	<div class="container">
+		    <span class="display-4"><b>Join The Largest Vaccination Drive</b></span>
+		    <br><br>
+		    <div class="btn-group footer_btn">
+		  		<button type="button" class="btn">
+		  			<img src="images/group.jpg" width="50px" class="rounded" alt="Cinque Terre">
+		  		</button>
+		  		<button type="button" class="btn">
+		  			<span class="route1 float-left">CoWin Registrations</span>
+		  			<br>
+		  			<span class="route2 float-left"><b>41.16 Crores</b></span>
+		  			<br>
+		  			<span class="route4 float-left">+ 38.67 Lakhs <span class="route3">Yesterday</span></span>
+		  		</button>
+			</div>
+			<div class="btn-group footer_btn">
+		  		<button type="button" class="btn">
+		  			<img src="images/group.jpg" width="50px" class="rounded" alt="Cinque Terre">
+		  		</button>
+		  		<button type="button" class="btn">
+		  			<span class="route1 float-left">Vaccinations Delivered</span>
+		  			<br>
+		  			<span class="route2 float-left"><b>42.28 Crores</b></span>
+		  			<br>
+		  			<span class="route4 float-left">+ 54.62 Lakhs <span class="route3">Yesterday</span></span>
+		  		</button>
+			</div>
+			<div class="btn-group footer_btn">
+		  		<button type="button" class="btn">
+		  			<img src="images/group.jpg" width="50px" class="rounded" alt="Cinque Terre">
+		  		</button>
+		  		<button type="button" class="btn">
+		  			<span class="route1 float-left">Fully Vaccinated</span>
+		  			<br>
+		  			<span class="route2 float-left"><b>8.95 Crores</b></span>
+		  			<br>
+		  			<span class="route4 float-left">+ 18.5 Lakhs <span class="route3">Yesterday</span></span>
+		  		</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- FOOTER -->
+<div class="foot_main">
+	<div class="container">
+		<div class="row ft">
+			<div class="col-sm-2">
+				<a class="foot_he">Vaccination Services</a><br><br>
+				<a class="foot_re">Register Members</a><br>
+				<a class="foot_re">Search Vaccination Centers</a><br>
+				<a class="foot_re">Book Vaccination Slots</a><br>
+				<a class="foot_re">Manage Appointment</a><br>
+				<a class="foot_re">Download Certificate</a><br>
+			</div>
+			<div class="col-sm-2">
+				<a class="foot_he">Platforms</a><br><br>
+				<a class="foot_re">CpWOM International</a><br>
+				<a class="foot_re">Vaccinator</a><br>
+				<a class="foot_re">Department Login</a><br>
+				<a class="foot_re">Verify Certificates</a><br>
+				<a class="foot_re">Vaccination Statistics</a><br>
+			</div>
+			<div class="col-sm-2">
+				<a class="foot_he">Resources</a><br><br>
+				<a class="foot_re">Hot To Get Vaccinated</a><br>
+				<a class="foot_re">Dos and Don'ts</a><br>
+				<a class="foot_re">Overview</a><br>
+				<a class="foot_re">API Guidelines</a><br>
+			</div>
+			<div class="col-sm-2">
+				<a class="foot_he">Support</a><br><br>
+				<a class="foot_re">Frequently Asked Questions</a><br>
+				<a class="foot_re">Certificate Corrections</a><br>
+				<a class="foot_re">Contact us</a><br>
+			</div>
+			<div class="col-sm-4">
+				<a class="foot_he"></a><br><br>
+				<a class="foot_re">Helpline +91 12 345678985<br>Technical Helpline: 0120 4473222</a><br>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div class="container">
+		<div class="row ft2">
+			<div class="col-sm-8">
+				Copyright © 2021 CoWIN. All Rights Reserved
+			</div>
+			<div class="col-sm-4">
+				<a class="foot_re">Terms of Service | </a>
+				<a class="foot_re">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 </body>
 </html>
